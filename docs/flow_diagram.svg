@@ -1,0 +1,112 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333" />
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000030"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8fafc"/>
+  
+  <!-- Title -->
+  <text x="400" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e293b">KALEIDO - Document Workflow System</text>
+  
+  <!-- User Layer -->
+  <text x="50" y="80" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#64748b">User Interface Layer</text>
+  <rect x="50" y="90" width="700" height="120" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="2" rx="10" filter="url(#shadow)"/>
+  
+  <!-- Streamlit Components -->
+  <rect x="80" y="120" width="120" height="60" fill="#3b82f6" stroke="#2563eb" stroke-width="2" rx="8" filter="url(#shadow)"/>
+  <text x="140" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">📄 Upload</text>
+  <text x="140" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Streamlit</text>
+  <text x="140" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Interface</text>
+  
+  <rect x="230" y="120" width="120" height="60" fill="#10b981" stroke="#059669" stroke-width="2" rx="8" filter="url(#shadow)"/>
+  <text x="290" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">✏️ Edit</text>
+  <text x="290" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Data Editor</text>
+  <text x="290" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">st.data_editor</text>
+  
+  <rect x="380" y="120" width="120" height="60" fill="#8b5cf6" stroke="#7c3aed" stroke-width="2" rx="8" filter="url(#shadow)"/>
+  <text x="440" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">💾 Export</text>
+  <text x="440" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">CSV/JSON</text>
+  <text x="440" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Download</text>
+  
+  <rect x="530" y="120" width="120" height="60" fill="#f59e0b" stroke="#d97706" stroke-width="2" rx="8" filter="url(#shadow)"/>
+  <text x="590" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">🔄 Workflow</text>
+  <text x="590" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Canvas View</text>
+  <text x="590" y="170" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="white">Drag & Drop</text>
+  
+  <!-- Arrows between Streamlit components -->
+  <line x1="200" y1="150" x2="230" y2="150" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="350" y1="150" x2="380" y2="150" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="500" y1="150" x2="530" y2="150" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- API Layer -->
+  <text x="50" y="250" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#64748b">API Layer</text>
+  <rect x="50" y="260" width="700" height="80" fill="#fef3c7" stroke="#f59e0b" stroke-width="2" rx="10" filter="url(#shadow)"/>
+  
+  <!-- API Endpoints -->
+  <rect x="120" y="280" width="100" height="40" fill="#f59e0b" stroke="#d97706" stroke-width="1" rx="5"/>
+  <text x="170" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">POST /upload</text>
+  <text x="170" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">File Handler</text>
+  
+  <rect x="250" y="280" width="100" height="40" fill="#f59e0b" stroke="#d97706" stroke-width="1" rx="5"/>
+  <text x="300" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">POST /extract</text>
+  <text x="300" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">NLP Process</text>
+  
+  <rect x="380" y="280" width="100" height="40" fill="#f59e0b" stroke="#d97706" stroke-width="1" rx="5"/>
+  <text x="430" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">GET /download</text>
+  <text x="430" y="310" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">Export Data</text>
+  
+  <!-- Arrows from Streamlit to API -->
+  <line x1="140" y1="180" x2="170" y2="280" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="290" y1="180" x2="300" y2="280" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="440" y1="180" x2="430" y2="280" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Processing Layer -->
+  <text x="50" y="380" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#64748b">Processing Layer</text>
+  <rect x="50" y="390" width="700" height="120" fill="#dcfce7" stroke="#16a34a" stroke-width="2" rx="10" filter="url(#shadow)"/>
+  
+  <!-- NLP Components -->
+  <rect x="80" y="420" width="100" height="60" fill="#16a34a" stroke="#15803d" stroke-width="2" rx="8" filter="url(#shadow)"/>
+  <text x="130" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">📊 Camelot</text>
+  <text x="130" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">PDF Tables</text>
+  <text x="130" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">Native Docs</text>
+  
+  <rect x="210" y="420" width="100" height="60" fill="#16a34a" stroke="#15803d" stroke-width="2" rx="8" filter="url(#shadow)"/>
+  <text x="260" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">🔍 PDFPlumber</text>
+  <text x="260" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">Text Analysis</text>
+  <text x="260" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">Layout Detect</text>
+  
+  <rect x="340" y="420" width="100" height="60" fill="#16a34a" stroke="#15803d" stroke-width="2" rx="8" filter="url(#shadow)"/>
+  <text x="390" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">👁️ Pytesseract</text>
+  <text x="390" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">OCR Engine</text>
+  <text x="390" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">Scanned Docs</text>
+  
+  <rect x="470" y="420" width="100" height="60" fill="#16a34a" stroke="#15803d" stroke-width="2" rx="8" filter="url(#shadow)"/>
+  <text x="520" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">🐼 Pandas</text>
+  <text x="520" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">Data Clean</text>
+  <text x="520" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">Structure</text>
+  
+  <rect x="600" y="420" width="100" height="60" fill="#16a34a" stroke="#15803d" stroke-width="2" rx="8" filter="url(#shadow)"/>
+  <text x="650" y="440" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="bold" fill="white">📄 DOCX</text>
+  <text x="650" y="455" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">Word Docs</text>
+  <text x="650" y="470" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="white">Table Extract</text>
+  
+  <!-- Arrows from API to Processing -->
+  <line x1="300" y1="320" x2="300" y2="420" stroke="#64748b" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Processing arrows -->
+  <line x1="180" y1="450" x2="210" y2="450" stroke="#16a34a" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="310" y1="450" x2="340" y2="450" stroke="#16a34a" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="440" y1="450" x2="470" y2="450" stroke="#16a34a" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="570" y1="450" x2="600" y2="450" stroke="#16a34a" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Data Flow -->
+  <text x="50" y="550" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#64748b">Data Flow</text>
+  <rect x="50" y="560" width="700" height="30" fill="#fee2e2" stroke="#ef4444" stroke-width="2" rx="5"/>
+  <text x="60" y="580" font-family="Arial, sans-serif" font-size="12" fill="#dc2626">📄 PDF/DOCX Input → 🔍 Table Detection → 🧠 NLP Processing → 📊 Structured Data → 💾 CSV/JSON Output</text>
+</svg>
