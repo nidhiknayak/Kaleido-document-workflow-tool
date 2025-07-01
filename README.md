@@ -1,4 +1,4 @@
-# KALEIDO - Document Workflow Tool
+# KALEIDO - A Document Workflow Tool
 ## 🚀 Full Stack + NLP Solution for Intelligent Document Processing
 
 ### 📋 Project Overview
@@ -24,30 +24,43 @@ KALEIDO is a comprehensive document workflow tool that processes tabular data fr
 ```
 KALEIDO/
 ├── backend/
-│   ├── __pycache__/           # Python cache files
-│   ├── app.py                 # FastAPI application (main backend)
-│   └── extractor.py           # NLP table extraction engine
+│   ├── __pycache__/                  # Python cache files
+│   ├── app.py                        # FastAPI application (main backend)
+│   └── extractor.py                  # Table extraction logic (PDF/DOCX)
 ├── docs/
-│   ├── api_docs.md           # API documentation
-│   ├── deployment.md         # Deployment guide
-│   └── flow_diagram.svg      # Workflow visualization
+│   ├── api_docs.md                   # API usage documentation
+│   ├── deployment.md                 # Deployment instructions
+│   ├── flow_diagram.svg              # Workflow diagram
+│   └── test_run.gif                  # Demo run capture
 ├── frontend/
-│   └── workflow_canvas.html  # Interactive drag-drop UI
+│   ├── mockup.png                    # Visual mockup of canvas UI
+│   └── workflow_canvas.html          # Interactive drag-and-drop UI
+├── sample docs/
+│   ├── sample-invoice.pdf            # PDF sample with tables
+│   └── school-timetable-template.docx # DOCX sample with tables
+├── sample run/
+│   ├── extracted_tables.csv          # CSV output sample
+│   ├── extracted_tables.json         # JSON output sample
+│   ├── screenshot 1.png              # Screenshot of workflow in action
+│   ├── screenshot 2.png
+│   ├── screenshot 3.png
+│   └── screenshot 4.png
 ├── streamlit_app/
-│   ├── __pycache__/          # Python cache files
-│   ├── pages/                # Multi-page Streamlit structure
-│   │   ├── 1_Extract.py      # Table extraction page
-│   │   ├── 2_Edit.py         # Data editing interface
-│   │   ├── 3_Export.py       # Export functionality
-│   │   └── 4_Workflow.py     # Workflow canvas integration
-│   ├── app.py                # Main Streamlit application
-│   └── helpers.py            # Utility functions
+│   ├── __pycache__/                  # Python cache files
+│   ├── app.py                        # Main Streamlit UI entry
+│   ├── helpers.py                    # Utility/helper functions
+│   └── pages/                        # Multi-page Streamlit structure
+│       ├── 1_Extract.py              # Extract tables
+│       ├── 2_Edit.py                 # Inline table editing
+│       ├── 3_Export.py               # Export section
+│       └── 4_Workflow.py             # Visual workflow
 ├── tests/
-│   ├── test_api.py           # API endpoint tests
-│   └── test_extractor.py     # Table extraction tests
-├── .gitignore                # Git ignore rules
-├── README.md                 # This file
-└── requirements.txt          # Project dependencies
+│   ├── test_api.py                   # Unit tests for backend API
+│   └── test_extractor.py            # Unit tests for table extraction logic
+├── kaleido.zip                       # Submission zip archive
+├── README.md                         # Project overview and documentation
+└── requirements.txt                  # Python dependencies
+
 ```
 
 ## 🛠️ Technology Stack
